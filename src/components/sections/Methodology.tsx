@@ -3,13 +3,13 @@ import { METHODOLOGY_STAGES } from "../../data/methodology";
 import { LabelMono } from "../ui/LabelMono";
 
 const GRID_MARKS = [
-  { x1: 82, y1: 308, stroke: "#e23b42" },
+  { x1: 82, y1: 308, stroke: "#fd5f07" },
   { x1: 88, y1: 302, stroke: "#6ea8dc" },
   { x1: 1094, y1: 572, stroke: "#3b4145" },
-  { x1: 786, y1: 572, stroke: "#e23b42" },
+  { x1: 786, y1: 572, stroke: "#fd5f07" },
   { x1: 434, y1: 440, stroke: "#6ea8dc" },
   { x1: 610, y1: 484, stroke: "#3b4145" },
-  { x1: 1182, y1: 88, stroke: "#e23b42" },
+  { x1: 1182, y1: 88, stroke: "#fd5f07" },
 ];
 
 function getScrollTrigger() {

@@ -11,7 +11,7 @@ export function AboutPage() {
     <div className="site-about">
       <PageHero
         label={SITE.name}
-        title={`About ${SITE.name}`}
+        title={SITE.name}
         subtitle="Your IT Security & Support Systems Experts"
       />
       <AboutContent />
@@ -24,7 +24,7 @@ export function AboutPage() {
 export const pageEntry: PageEntry = {
   path: "/about",
   meta: {
-    title: "About Rishee Technology Services Limited",
+    title: "About Altis Technology Services",
     description:
       "Your IT Security & Support Systems Experts. Trusted partner for cyber security solutions across Canada and the USA.",
     keywords: [

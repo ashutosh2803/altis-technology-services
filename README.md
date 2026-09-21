@@ -1,10 +1,10 @@
-# Rishee Technology Services Limited
+# Altis Technology Services
 
 ## Screenshot
 
 <!-- Add your landing page screenshot to the repo and update the path below -->
 
-![Rishee Technology Services Limited landing page](./src/assets/landing-page-screenshot.png)
+![Altis Technology Services landing page](./src/assets/landing-page-screenshot.png)
 
 ## Description
 

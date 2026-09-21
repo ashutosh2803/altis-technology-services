@@ -52,7 +52,7 @@ export function ContactSection() {
             <circle cx="48%" cy="58%" r="2.5" />
             <circle cx="72%" cy="68%" r="2" />
           </g>
-          <g fill="rgba(226,59,66,0.65)">
+          <g fill="rgba(253,95,7,0.65)">
             <circle cx="22%" cy="72%" r="2" />
             <circle cx="58%" cy="82%" r="1.5" />
             <circle cx="90%" cy="22%" r="2" />

@@ -47,12 +47,13 @@ export const SERVICE_CARDS: ServiceCard[] = [
     title: "Disaster Recovery",
     href: "/disaster-recovery-and-business-continuity",
     description:
-      "Backups for your servers, devices, Microsoft 365 and Google Workspace — with tested restores, so a bad day doesn't become a lost week.",
+      "On-site and cloud backups with tested restores, so a bad day doesn't become a lost week.",
     icon: RefreshCw,
     links: [
-      { label: "Microsoft 365 Backup", href: "/microsoft-365-backup" },
-      { label: "Google Workspace Backup", href: "/google-workspace-backup" },
-      { label: "Windows Device Backup", href: "/windows-device-backup" },
+      {
+        label: "Disaster Recovery Systems",
+        href: "/disaster-recovery-and-business-continuity",
+      },
     ],
   },
   {
@@ -82,7 +83,7 @@ export const SERVICE_CARDS: ServiceCard[] = [
     title: "Managed Services",
     href: "/it-managed-services",
     description:
-      "We run your IT — help desk, monitoring, patching, and asset management — so your team can get on with their work.",
+      "We run your IT — help desk, observability, and patching — so your team can get on with their work.",
     icon: Settings,
     links: [
       {
@@ -91,8 +92,7 @@ export const SERVICE_CARDS: ServiceCard[] = [
       },
       { label: "Co-Managed IT Services", href: "/co-managed-it-services" },
       { label: "IT Service Desk Support", href: "/it-service-desk-support" },
-      { label: "Monitoring & Maintenance", href: "/monitoring-maintenance" },
-      { label: "Asset Management", href: "/asset-management" },
+      { label: "Observability AI", href: "/observability-ai" },
     ],
   },
   {
@@ -100,7 +100,7 @@ export const SERVICE_CARDS: ServiceCard[] = [
     title: "IT Projects & Procurement",
     href: "/projects-procurement",
     description:
-      "Planning, hardware sourcing, cabling, and implementation, handled start to finish and delivered on schedule.",
+      "Planning, hardware sourcing, and implementation, handled start to finish and delivered on schedule.",
     icon: Wrench,
     links: [
       { label: "Hardware Procurement", href: "/hardware-procurement" },
@@ -108,10 +108,6 @@ export const SERVICE_CARDS: ServiceCard[] = [
       {
         label: "IT Implementation Projects",
         href: "/it-implementation-projects",
-      },
-      {
-        label: "Cabling & Network Infrastructure",
-        href: "/cabling-infrastructure",
       },
     ],
   },
@@ -124,7 +120,7 @@ export const SERVICE_CARDS: ServiceCard[] = [
     icon: Cpu,
     links: [
       {
-        label: "Shadow AI & AI Governance",
+        label: "Agentic AI & AI Governance",
         href: "/shadow-ai-ai-governance-services",
       },
     ],

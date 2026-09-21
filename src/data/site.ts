@@ -1,5 +1,5 @@
 export const SITE = {
-  name: "Rishee Technology Services Limited",
+  name: "Altis Technology Services",
   phone: "1-877-275-9636",
   phoneHref: "tel:+18772759636",
   email: "info@risheetechnology.com",

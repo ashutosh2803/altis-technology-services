@@ -22,7 +22,7 @@ export function HomePage() {
 export const pageEntry: PageEntry = {
   path: "/",
   meta: {
-    title: "Welcome to Rishee Technology Services Limited",
+    title: "Welcome to Altis Technology Services",
     description:
       "IT services and cyber security in London, Ontario. We keep businesses across Canada and the USA protected, supported, and running without drama.",
     keywords: [
@@ -31,7 +31,7 @@ export const pageEntry: PageEntry = {
       "managed services",
       "cyber security",
       "london ontario",
-      "rishee technology services limited",
+      "altis technology services",
     ],
     type: "page",
   },
