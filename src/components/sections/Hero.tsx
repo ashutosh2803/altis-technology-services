@@ -37,7 +37,7 @@ export function Hero() {
         <div className="relative h-full w-full">
           <div
             aria-hidden
-            className="pointer-events-none absolute -inset-x-24 -inset-y-16 bg-[radial-gradient(45%_55%_at_60%_50%,rgba(110,168,220,0.22),rgba(226,59,66,0.1)_55%,transparent_78%)] blur-2xl"
+            className="pointer-events-none absolute -inset-x-24 -inset-y-16 bg-[radial-gradient(45%_55%_at_60%_50%,rgba(110,168,220,0.22),rgba(253,95,7,0.1)_55%,transparent_78%)] blur-2xl"
           />
           <div
             className="relative h-full min-h-[22rem] w-full overflow-hidden sm:min-h-[28rem] lg:absolute lg:inset-y-0 lg:min-h-0"

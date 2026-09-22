@@ -1,17 +1,13 @@
 import type { LucideIcon } from "lucide-react";
 import {
   Activity,
-  Archive,
   Building2,
-  Cable,
-  ClipboardCheck,
   Cloud,
   CloudCog,
   Cpu,
   Eye,
   FileSearch,
   Globe,
-  HardDrive,
   Headphones,
   Layers,
   MailWarning,
@@ -138,10 +134,10 @@ export const NAV_ITEMS: NavItem[] = [
     ],
   },
   {
-    label: "Managed IT",
+    label: "Managed Services",
     href: "/it-managed-services",
     intro:
-      "Managed IT Services that empower your organization to thrive in the digital age",
+      "Managed Services that empower your organization to thrive in the digital age",
     children: [
       {
         label: "Fully Managed IT Services",
@@ -168,34 +164,10 @@ export const NAV_ITEMS: NavItem[] = [
         icon: Headphones,
       },
       {
-        label: "Monitoring & Maintenance",
+        label: "Observability AI",
         description:
-          "We watch your systems around the clock and fix small issues before they grow.",
+          "AI-powered observability so you can see how systems behave and catch issues before they grow.",
         icon: Activity,
-      },
-      {
-        label: "Asset Management",
-        description:
-          "Tracking and lifecycle management for all your hardware and software.",
-        icon: ClipboardCheck,
-      },
-      {
-        label: "Google Workspace Backup",
-        description:
-          "Automatic backups of Gmail, Drive, and Calendar, with quick restores.",
-        icon: Archive,
-      },
-      {
-        label: "Microsoft 365 Backup",
-        description:
-          "Automatic backups of Exchange, OneDrive, SharePoint, and Teams data.",
-        icon: HardDrive,
-      },
-      {
-        label: "Windows Device Backup",
-        description:
-          "Continuous cloud backup for Windows devices, with fast recovery.",
-        icon: Cpu,
       },
     ],
   },
@@ -203,7 +175,7 @@ export const NAV_ITEMS: NavItem[] = [
     label: "Projects",
     href: "/projects-procurement",
     intro:
-      "Rishee Technology Services Limited is your one stop shop for projects, services & hardware/software",
+      "Altis Technology Services is your one stop shop for projects, services & hardware/software",
     children: [
       {
         label: "Hardware Procurement",
@@ -223,12 +195,6 @@ export const NAV_ITEMS: NavItem[] = [
           "Rollouts and deployments handled start to finish by our team.",
         icon: Wrench,
       },
-      {
-        label: "Cabling & Network Infrastructure",
-        description:
-          "Structured cabling and network builds for reliable connectivity.",
-        icon: Cable,
-      },
     ],
   },
 ];
@@ -243,6 +209,6 @@ export const FOOTER_SERVICE_LINKS = [
   { label: "Cyber Security", href: "/cyber-security" },
   { label: "AI Security", href: "/shadow-ai-ai-governance-services" },
   { label: "Cloud", href: "/cloud-infrastructure-services" },
-  { label: "Managed IT", href: "/it-managed-services" },
+  { label: "Managed Services", href: "/it-managed-services" },
   { label: "Projects", href: "/projects-procurement" },
 ];

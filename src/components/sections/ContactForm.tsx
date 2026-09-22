@@ -10,7 +10,7 @@ export function ContactForm() {
   };
 
   return (
-    <div className="contact-form-card relative rounded-[var(--r-sm)] border border-[var(--accent-line)] bg-[var(--surface-2)] p-6 shadow-[0_0_48px_-12px_rgba(226,59,66,0.25)] md:p-8">
+    <div className="contact-form-card relative rounded-[var(--r-sm)] border border-[var(--accent-line)] bg-[var(--surface-2)] p-6 shadow-[0_0_48px_-12px_rgba(253,95,7,0.25)] md:p-8">
       <p className="label-mono text-[var(--ink-3)]">Send an enquiry</p>
 
       <form className="mt-6 space-y-5" onSubmit={handleSubmit} noValidate>

@@ -6,10 +6,10 @@ import { IconBox } from "./components/ui/IconBox";
 import { LabelMono } from "./components/ui/LabelMono";
 
 const GRID_MARKS = [
-  { x1: 120, y1: 180, stroke: "#e23b42" },
+  { x1: 120, y1: 180, stroke: "#fd5f07" },
   { x1: 340, y1: 420, stroke: "#6ea8dc" },
   { x1: 780, y1: 260, stroke: "#3b4145" },
-  { x1: 1020, y1: 520, stroke: "#e23b42" },
+  { x1: 1020, y1: 520, stroke: "#fd5f07" },
 ];
 
 interface WhyChooseCta {

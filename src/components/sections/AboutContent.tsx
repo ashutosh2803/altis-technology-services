@@ -15,7 +15,7 @@ export function AboutContent() {
         >
           <div className="md:col-span-4 lg:col-span-5">
             <h2 className="text-[length:var(--fs-h2)] font-semibold tracking-[var(--tr-h2)] text-[var(--ink-1)]">
-              About {SITE.name}
+              {SITE.name}
             </h2>
           </div>
 

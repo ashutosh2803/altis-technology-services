@@ -15,7 +15,7 @@ export function AiSecurityPage() {
     <div className="site-ai-security">
       <PageHero
         label={SITE.name}
-        title="Shadow AI & AI Governance Services"
+        title="Agentic AI & AI Governance Services"
         subtitle="Visibility, monitoring, and managed guardrails for safe AI adoption"
       />
       <AiSecurityContent />
@@ -33,9 +33,9 @@ export function AiSecurityPage() {
 export const pageEntry: PageEntry = {
   path: "/shadow-ai-ai-governance-services",
   meta: {
-    title: "Shadow AI & AI Governance Services",
+    title: "Agentic AI & AI Governance Services",
     description:
-      "Visibility, monitoring, and managed guardrails for safe AI adoption. Shadow AI monitoring, data exposure controls, and ongoing governance.",
+      "Visibility, monitoring, and managed guardrails for safe AI adoption. Agentic AI monitoring, data exposure controls, and ongoing governance.",
     keywords: [
       "ai security",
       "shadow ai",

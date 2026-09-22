@@ -12,7 +12,7 @@ export function ContactPage() {
 export const pageEntry: PageEntry = {
   path: "/contact",
   meta: {
-    title: "Contact Rishee Technology Services Limited",
+    title: "Contact Altis Technology Services",
     description:
       "Get in touch for a consultation, quote, or IT security support. Enquiries answered within 24 hours on business days.",
     keywords: [
