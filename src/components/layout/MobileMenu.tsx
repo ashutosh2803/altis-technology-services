@@ -61,7 +61,7 @@ export function MobileMenu({ open, onClose }: MobileMenuProps) {
                   <Link
                     to={item.href}
                     onClick={onClose}
-                    className="group flex flex-1 items-baseline gap-3 py-4 text-[length:var(--fs-h3)] font-semibold text-[var(--ink-1)] transition-colors hover:text-[var(--accent-hi)]"
+                    className="group flex flex-1 items-baseline gap-3 py-4 text-[length:var(--fs-h3)] font-semibold text-[var(--accent-fill)] transition-colors hover:text-[var(--accent-hi)]"
                   >
                     {item.label}
                     <span className="font-[family-name:var(--font-jetbrains)] text-[length:var(--fs-label)] tracking-[var(--tr-label)] text-[var(--accent)]">
@@ -100,7 +100,7 @@ export function MobileMenu({ open, onClose }: MobileMenuProps) {
                       <ul className="mb-3 flex flex-col gap-0.5 border-l border-[var(--accent-line)] pl-5">
                         {item.children.map((child) => (
                           <li key={child.label}>
-                            <span className="block py-2 text-[length:var(--fs-sm)] font-medium text-[var(--ink-2)]">
+                            <span className="block py-2 text-[length:var(--fs-sm)] font-medium text-[var(--accent-fill)]">
                               {child.label}
                             </span>
                           </li>
