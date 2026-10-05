@@ -35,8 +35,8 @@ export function NavDropdown({
         aria-haspopup="true"
         className={`flex items-center gap-1 border-b-2 py-8 font-[family-name:var(--font-jetbrains)] text-[length:var(--fs-label)] font-medium uppercase tracking-[var(--tr-label)] transition-colors duration-[var(--dur-1)] ${
           isOpen
-            ? "border-[var(--accent)] text-[var(--ink-1)]"
-            : "border-transparent text-[var(--ink-2)] hover:text-[var(--ink-1)]"
+            ? "border-[var(--accent)] text-[var(--accent-fill)]"
+            : "border-transparent text-[var(--accent-fill)] hover:text-[var(--accent-hi)]"
         }`}
       >
         {item.label}
@@ -55,7 +55,7 @@ export function NavDropdown({
       >
         <div className="ac-container grid gap-0 py-8 lg:grid-cols-[240px_minmax(0,1fr)]">
           <div className="flex flex-col border-r border-[var(--line-soft)] pr-8">
-            <p className="text-[length:var(--fs-h3)] font-semibold text-[var(--ink-1)]">
+            <p className="text-[length:var(--fs-h3)] font-semibold text-[var(--accent-fill)]">
               {item.label}
             </p>
             {item.intro && (
@@ -87,7 +87,7 @@ export function NavDropdown({
                   <IconBox icon={child.icon} size="sm" />
                   <span className="min-w-0 flex-1">
                     <span className="flex items-start justify-between gap-3">
-                      <span className="text-[length:var(--fs-sm)] font-medium text-[var(--ink-1)]">
+                      <span className="text-[length:var(--fs-sm)] font-medium text-[var(--accent-fill)]">
                         {child.label}
                       </span>
                       <span

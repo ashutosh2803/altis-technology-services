@@ -10,29 +10,7 @@ interface CtaSectionProps {
 
 export function CtaSection({ description }: CtaSectionProps) {
   return (
-    <section
-      className="relative overflow-hidden border-y border-[var(--line)]"
-      style={
-        {
-          "--ink-1": "#ffffff",
-          "--ink-2": "rgba(255,255,255,0.86)",
-          "--ink-3": "rgba(255,255,255,0.72)",
-          "--accent": "#ffffff",
-          "--accent-hi": "#ffffff",
-          "--accent-line": "rgba(255,255,255,0.45)",
-          "--accent-dim": "rgba(255,255,255,0.16)",
-          "--line": "rgba(255,255,255,0.24)",
-          "--line-soft": "rgba(255,255,255,0.16)",
-          "--line-strong": "rgba(255,255,255,0.4)",
-          "--accent-fill": "#ffffff",
-          "--ink-on-accent": "#c1272e",
-          "--surface-1": "transparent",
-          "--surface-2": "rgba(255,255,255,0.08)",
-          "--surface-3": "rgba(255,255,255,0.14)",
-          backgroundColor: "#cb2028",
-        } as CSSProperties
-      }
-    >
+    <section className="relative overflow-hidden border-y border-[var(--line)]">
       <div className="ac-reveal relative" style={{ "--i": 0 } as CSSProperties}>
         <svg aria-hidden className="absolute inset-0 h-full w-full opacity-30">
           <defs>

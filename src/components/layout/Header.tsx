@@ -67,11 +67,7 @@ export function Header() {
                 <div key={item.label} className="flex h-full items-center">
                   <NavLink
                     to={item.href}
-                    className={({ isActive }) =>
-                      `flex items-center gap-1 py-8 font-[family-name:var(--font-jetbrains)] text-[length:var(--fs-label)] font-medium uppercase tracking-[var(--tr-label)] transition-colors duration-[var(--dur-1)] hover:text-[var(--ink-1)] ${
-                        isActive ? "text-[var(--ink-1)]" : "text-[var(--ink-2)]"
-                      }`
-                    }
+                    className="flex items-center gap-1 py-8 font-[family-name:var(--font-jetbrains)] text-[length:var(--fs-label)] font-medium uppercase tracking-[var(--tr-label)] text-[var(--accent-fill)] transition-colors duration-[var(--dur-1)] hover:text-[var(--accent-hi)]"
                   >
                     {item.label}
                   </NavLink>
