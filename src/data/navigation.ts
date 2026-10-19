@@ -1,30 +1,29 @@
 import type { LucideIcon } from "lucide-react";
 import {
   Activity,
-  Building2,
+  Briefcase,
   Cloud,
   CloudCog,
-  Cpu,
+  Database,
   Eye,
+  FileBarChart,
   FileSearch,
-  Globe,
   Headphones,
+  Home,
   Layers,
   MailWarning,
-  Monitor,
   RefreshCw,
-  Server,
   Shield,
   ShieldAlert,
   ShieldCheck,
   Users,
-  Wrench,
 } from "lucide-react";
 
 export interface NavChild {
   label: string;
   description: string;
   icon: LucideIcon;
+  href?: string;
 }
 
 export interface NavItem {
@@ -35,101 +34,160 @@ export interface NavItem {
 }
 
 export const NAV_ITEMS: NavItem[] = [
-  { label: "About", href: "/about" },
   {
-    label: "Cyber Security",
-    href: "/cyber-security",
-    intro: "Protection for your data, your systems, and your people",
+    label: "Home",
+    href: "/",
+    intro: "Learn about Altis and the people behind our work",
     children: [
       {
-        label: "Cyber Security Audits",
+        label: "About Us",
+        description: "Learn about Altis Technology Services.",
+        icon: Home,
+        href: "/about",
+      },
+      {
+        label: "Our Team",
+        description: "Meet the people who make our work possible.",
+        icon: Users,
+        href: "/about",
+      },
+      {
+        label: "Careers",
+        description: "Explore opportunities to work with Altis.",
+        icon: Briefcase,
+        href: "/about",
+      },
+    ],
+  },
+  {
+    label: "AI Innovation and SecOps",
+    href: "/cyber-security",
+    intro: "Practical AI innovation supported by security operations",
+    children: [
+      {
+        label: "Security Assessments",
         description:
           "Identify gaps in your security posture before attackers do.",
         icon: FileSearch,
+        href: "/cyber-security",
       },
       {
         label: "Security Operations Centre",
         description:
           "24/7 monitoring and response to keep threats off your network.",
         icon: Activity,
+        href: "/cyber-security",
       },
       {
         label: "Managed Firewall",
         description:
           "Managed perimeter protection with real-time threat blocking.",
         icon: Shield,
+        href: "/cyber-security",
       },
       {
         label: "Detection & Response",
         description:
           "Rapid identification and containment when something looks wrong.",
         icon: ShieldAlert,
+        href: "/cyber-security",
       },
       {
         label: "Managed Antivirus",
         description:
           "Endpoint protection kept current and managed across your devices.",
         icon: ShieldCheck,
+        href: "/cyber-security",
       },
       {
         label: "Email Phishing Security",
         description:
           "Stop phishing and malicious email before it reaches your inbox.",
         icon: MailWarning,
+        href: "/cyber-security",
       },
       {
         label: "Security Awareness Training",
         description: "Turn your staff into a strong first line of defence.",
         icon: Users,
+        href: "/cyber-security",
       },
       {
         label: "Dark Web Monitoring",
         description:
           "Alerts when your credentials or data appear on the dark web.",
         icon: Eye,
+        href: "/cyber-security",
       },
     ],
   },
-  { label: "AI Security", href: "/shadow-ai-ai-governance-services" },
   {
-    label: "Cloud",
-    href: "/cloud-infrastructure-services",
-    intro: "Build, Secure and Protect Your Business Cloud Infrastructure",
+    label: "Consulting",
+    href: "/consulting",
+    intro:
+      "Domain specialists, agile delivery, and quality built into the work",
     children: [
       {
-        label: "Cloud Consulting",
+        label: "Domain Specialists",
         description:
-          "Expert guidance to plan, design, and secure your cloud strategy.",
+          "Industry-aware consultants who understand your context and constraints.",
+        icon: Briefcase,
+        href: "/consulting",
+      },
+      {
+        label: "Agile Delivery",
+        description: "Responsive teams that adapt as your priorities change.",
+        icon: Activity,
+        href: "/consulting",
+      },
+      {
+        label: "Reusable Foundations",
+        description:
+          "Accelerators and frameworks informed by real delivery experience.",
+        icon: Layers,
+        href: "/consulting",
+      },
+      {
+        label: "Quality and Governance",
+        description: "Structured reviews and assurance throughout delivery.",
+        icon: ShieldCheck,
+        href: "/consulting",
+      },
+    ],
+  },
+  {
+    label: "Cloud",
+    href: "/cloud",
+    intro:
+      "Move beyond migration to a secure, scalable, AI-ready cloud operating model",
+    children: [
+      {
+        label: "Assessment & Strategy",
+        description:
+          "Assess your environment and plan a cloud operating model that fits your business.",
         icon: CloudCog,
+        href: "/cloud",
       },
       {
-        label: "Cloud Migration Services",
+        label: "Migration & Modernization",
         description:
-          "Move workloads to the cloud with minimal disruption to your team.",
+          "Move workloads and modernize beyond lift-and-shift migration.",
         icon: Cloud,
+        href: "/cloud",
       },
       {
-        label: "Microsoft 365 Services",
+        label: "AI Landing Zones",
         description:
-          "Setup, management, and security for your Microsoft 365 environment.",
-        icon: Monitor,
+          "Build secure cloud foundations ready for today's AI workloads.",
+        icon: Database,
+        href: "/cloud",
       },
       {
-        label: "Google Workspace Services",
-        description: "Deployment and day-to-day support for Google Workspace.",
-        icon: Globe,
-      },
-      {
-        label: "Infrastructure as a Service",
+        label: "Managed Cloud Operations",
         description:
-          "Scalable cloud infrastructure without the overhead of owning hardware.",
-        icon: Server,
-      },
-      {
-        label: "Colocation",
-        description:
-          "Secure, reliable rack space for your servers in our data centre.",
-        icon: Building2,
+          "Operate cloud infrastructure that stays secure, scalable, and cost-optimized.",
+        icon: Activity,
+        href: "/cloud",
       },
     ],
   },
@@ -144,71 +202,72 @@ export const NAV_ITEMS: NavItem[] = [
         description:
           "We run your whole IT operation, from help desk to security to upgrades.",
         icon: Layers,
+        href: "/it-managed-services",
       },
       {
         label: "Co-Managed IT Services",
         description:
           "We work alongside your internal IT team and fill the gaps where needed.",
         icon: Users,
+        href: "/it-managed-services",
       },
       {
         label: "Disaster Recovery Systems",
         description:
           "On-site and cloud backups with tested restores, so a bad day stays a short one.",
         icon: RefreshCw,
+        href: "/it-managed-services",
       },
       {
         label: "IT Service Desk Support",
         description:
           "A friendly help desk your employees can reach whenever something breaks.",
         icon: Headphones,
+        href: "/it-managed-services",
       },
       {
         label: "Observability AI",
         description:
           "AI-powered observability so you can see how systems behave and catch issues before they grow.",
         icon: Activity,
+        href: "/it-managed-services",
       },
     ],
   },
   {
-    label: "Projects",
-    href: "/projects-procurement",
+    label: "Data & Analytics",
+    href: "/data-analytics",
     intro:
-      "Altis Technology Services is your one stop shop for projects, services & hardware/software",
+      "Build governed, AI-ready data foundations for intelligent analytics and decisions",
     children: [
       {
-        label: "Hardware Procurement",
+        label: "AI-Ready Data Foundations",
         description:
-          "Sourcing, quoting, and delivery of the right hardware for your business.",
-        icon: Cpu,
+          "Move from raw, scattered data to governed data infrastructure.",
+        icon: Database,
+        href: "/data-analytics",
       },
       {
-        label: "Consulting & Planning",
+        label: "Analytics & Decision-Making",
         description:
-          "Structured planning so your IT projects start on solid ground.",
-        icon: FileSearch,
-      },
-      {
-        label: "IT Implementation Projects",
-        description:
-          "Rollouts and deployments handled start to finish by our team.",
-        icon: Wrench,
+          "Build intelligent analytics and support decisions at scale.",
+        icon: FileBarChart,
+        href: "/data-analytics",
       },
     ],
   },
 ];
 
 export const FOOTER_COMPANY_LINKS = [
-  { label: "About", href: "/about" },
+  { label: "About Us", href: "/about" },
   { label: "Contact", href: "/contact" },
   { label: "Get a Quote", href: "/contact" },
 ];
 
 export const FOOTER_SERVICE_LINKS = [
-  { label: "Cyber Security", href: "/cyber-security" },
-  { label: "AI Security", href: "/shadow-ai-ai-governance-services" },
-  { label: "Cloud", href: "/cloud-infrastructure-services" },
+  { label: "AI Innovation and SecOps", href: "/cyber-security" },
+  { label: "Consulting", href: "/consulting" },
+  { label: "Cloud", href: "/cloud" },
   { label: "Managed Services", href: "/it-managed-services" },
-  { label: "Projects", href: "/projects-procurement" },
+  { label: "Data & Analytics", href: "/data-analytics" },
 ];

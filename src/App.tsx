@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import { Analytics } from "@vercel/analytics/react";
 import { SiteLayout } from "./components/layout/SiteLayout";
 import { sitePages } from "./pages";
@@ -12,6 +12,10 @@ export function App() {
           {sitePages.map(({ path, Component }) => (
             <Route key={path} path={path} element={<Component />} />
           ))}
+          <Route
+            path="/shadow-ai-ai-governance-services"
+            element={<Navigate to="/consulting" replace />}
+          />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </SiteLayout>

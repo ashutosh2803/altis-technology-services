@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import type { NavItem } from "../../data/navigation";
 import { SITE } from "../../data/site";
 import { ChevronDown } from "lucide-react";
@@ -63,7 +64,10 @@ export function NavDropdown({
                 {item.intro}
               </p>
             )}
-            <span className="ac-underline mt-4 inline-flex w-fit items-center gap-2 text-[length:var(--fs-sm)] font-medium text-[var(--accent-hi)]">
+            <Link
+              to={item.href}
+              className="ac-underline mt-4 inline-flex w-fit items-center gap-2 text-[length:var(--fs-sm)] font-medium text-[var(--accent-hi)]"
+            >
               View all
               <span
                 aria-hidden
@@ -71,7 +75,7 @@ export function NavDropdown({
               >
                 →
               </span>
-            </span>
+            </Link>
             <p
               aria-hidden
               className="mt-auto hidden pt-6 font-[family-name:var(--font-jetbrains)] text-[0.65rem] tracking-[0.12em] text-[var(--ink-3)] lg:block"
@@ -83,7 +87,11 @@ export function NavDropdown({
           <ul className={`grid content-start gap-px lg:pl-8 ${columnClass}`}>
             {item.children.map((child, index) => (
               <li key={child.label}>
-                <div className="group flex gap-3 rounded-[var(--r-xs)] p-3.5">
+                <Link
+                  to={child.href ?? item.href}
+                  className="group flex gap-3 rounded-[var(--r-xs)] p-3.5 transition-colors hover:bg-[var(--surface-2)]"
+                  onClick={onClose}
+                >
                   <IconBox icon={child.icon} size="sm" />
                   <span className="min-w-0 flex-1">
                     <span className="flex items-start justify-between gap-3">
@@ -101,7 +109,7 @@ export function NavDropdown({
                       {child.description}
                     </span>
                   </span>
-                </div>
+                </Link>
               </li>
             ))}
           </ul>

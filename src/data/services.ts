@@ -1,11 +1,11 @@
 import type { LucideIcon } from "lucide-react";
 import {
   Cloud,
-  Cpu,
+  FileBarChart,
   RefreshCw,
   Settings,
   ShieldCheck,
-  Wrench,
+  Briefcase,
 } from "lucide-react";
 
 export interface ServiceLink {
@@ -25,13 +25,13 @@ export interface ServiceCard {
 export const SERVICE_CARDS: ServiceCard[] = [
   {
     number: "01",
-    title: "Cyber Security",
+    title: "AI Innovation and SecOps",
     href: "/cyber-security",
     description:
-      "Audits, monitoring, managed firewalls, and staff training that keep your data and systems protected as threats change.",
+      "Move AI initiatives forward with security operations, monitoring, and response that help protect your people, data, and systems.",
     icon: ShieldCheck,
     links: [
-      { label: "Cyber Security Audits", href: "/cyber-security-audits" },
+      { label: "Security Assessments", href: "/cyber-security-audits" },
       {
         label: "Security Operations Centre",
         href: "/security-operations-centre-soc",
@@ -59,24 +59,11 @@ export const SERVICE_CARDS: ServiceCard[] = [
   {
     number: "03",
     title: "Cloud Services",
-    href: "/cloud-infrastructure-services",
+    href: "/cloud",
     description:
-      "Migration, hosting, and day-to-day management for Microsoft 365, Google Workspace, and your cloud infrastructure.",
+      "Move beyond lift-and-shift to secure, scalable, cost-optimized cloud operations, modernization, and AI-ready infrastructure.",
     icon: Cloud,
-    links: [
-      { label: "Cloud Consulting", href: "/cloud-services-consulting" },
-      { label: "Cloud Migration Services", href: "/cloud-migration-services" },
-      { label: "Microsoft 365 Services", href: "/microsoft-365-services" },
-      {
-        label: "Google Workspace Services",
-        href: "/google-workspace-services",
-      },
-      {
-        label: "Infrastructure as a Service",
-        href: "/infrastructure-as-a-service",
-      },
-      { label: "Colocation", href: "/colocation" },
-    ],
+    links: [{ label: "Explore Cloud", href: "/cloud" }],
   },
   {
     number: "04",
@@ -97,31 +84,24 @@ export const SERVICE_CARDS: ServiceCard[] = [
   },
   {
     number: "05",
-    title: "IT Projects & Procurement",
-    href: "/projects-procurement",
+    title: "Data & Analytics",
+    href: "/data-analytics",
     description:
-      "Planning, hardware sourcing, and implementation, handled start to finish and delivered on schedule.",
-    icon: Wrench,
-    links: [
-      { label: "Hardware Procurement", href: "/hardware-procurement" },
-      { label: "Consulting & Planning", href: "/consulting-planning" },
-      {
-        label: "IT Implementation Projects",
-        href: "/it-implementation-projects",
-      },
-    ],
+      "Build governed, AI-ready data foundations and turn them into intelligent analytics and decision-making at scale.",
+    icon: FileBarChart,
+    links: [{ label: "Explore Data & Analytics", href: "/data-analytics" }],
   },
   {
     number: "06",
-    title: "AI Security",
-    href: "/shadow-ai-ai-governance-services",
+    title: "Consulting",
+    href: "/consulting",
     description:
-      "Visibility, monitoring, and managed guardrails for safe AI adoption.",
-    icon: Cpu,
+      "Industry specialists, agile delivery, reusable foundations, and quality built into every engagement.",
+    icon: Briefcase,
     links: [
       {
-        label: "Agentic AI & AI Governance",
-        href: "/shadow-ai-ai-governance-services",
+        label: "Explore Consulting",
+        href: "/consulting",
       },
     ],
   },

@@ -1,5 +1,4 @@
 import { ABOUT_CTA_DESCRIPTION } from "../data/about";
-import { SITE } from "../data/site";
 import { AboutContent } from "../components/sections/AboutContent";
 import { CtaSection } from "../components/sections/CtaSection";
 import { PageHero } from "../components/sections/PageHero";
@@ -10,8 +9,8 @@ export function AboutPage() {
   return (
     <div className="site-about">
       <PageHero
-        label={SITE.name}
-        title={SITE.name}
+        label="Home"
+        title="About Us"
         subtitle="Your IT Security & Support Systems Experts"
       />
       <AboutContent />

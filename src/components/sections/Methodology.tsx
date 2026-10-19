@@ -121,10 +121,11 @@ export function Methodology() {
         <div className="max-w-[44rem]">
           <LabelMono>Methodology</LabelMono>
           <h2 className="mt-4 text-[length:var(--fs-h2)] font-semibold tracking-[var(--tr-h2)] text-[var(--ink-1)]">
-            Cyber Security Auditing Services
+            Security Operations and Assessments
           </h2>
           <p className="measure mt-4 text-[var(--ink-2)]">
-            Analyze your organization&apos;s security posture.
+            Understand your security posture and strengthen the operations that
+            protect it.
           </p>
         </div>
 

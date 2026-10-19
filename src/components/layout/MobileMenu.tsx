@@ -100,9 +100,13 @@ export function MobileMenu({ open, onClose }: MobileMenuProps) {
                       <ul className="mb-3 flex flex-col gap-0.5 border-l border-[var(--accent-line)] pl-5">
                         {item.children.map((child) => (
                           <li key={child.label}>
-                            <span className="block py-2 text-[length:var(--fs-sm)] font-medium text-[var(--accent-fill)]">
+                            <Link
+                              to={child.href ?? item.href}
+                              onClick={onClose}
+                              className="block py-2 text-[length:var(--fs-sm)] font-medium text-[var(--accent-fill)] transition-colors hover:text-[var(--accent-hi)]"
+                            >
                               {child.label}
-                            </span>
+                            </Link>
                           </li>
                         ))}
                       </ul>
